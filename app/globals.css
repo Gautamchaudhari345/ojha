@@ -101,3 +101,19 @@ a { text-decoration: none; }
 .not-found h1 { font-size: 60px; letter-spacing: -.06em; }
 .not-found p { color: #6a7482; margin-bottom: 28px; }
 @media (max-width: 700px) { .inner-hero { min-height: 590px; padding-top: 32px; } .back-link { margin-bottom: 140px; } .inner-section, .inner-dark, .inner-cta { padding: 80px 0; } .inner-cta { align-items: flex-start; flex-direction: column; } }
+.form-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; padding: 112px 0; }
+.enquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.enquiry-form label { color: #657181; display: flex; flex-direction: column; font-size: 12px; gap: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.enquiry-form input, .enquiry-form select, .enquiry-form textarea { background: white; border: 1px solid #dbe1e8; color: #1a2433; font: inherit; font-size: 14px; letter-spacing: 0; outline: none; padding: 14px 15px; text-transform: none; width: 100%; }
+.enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { border-color: #c9a45c; }
+.enquiry-form .full { grid-column: 1 / -1; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 96px 0; }
+.portfolio-card { background-position: center; background-size: cover; color: white; display: flex; flex-direction: column; justify-content: flex-end; min-height: 360px; overflow: hidden; padding: 28px; position: relative; }
+.portfolio-card:before { background: linear-gradient(180deg, transparent 25%, rgba(13,24,39,.9)); content: ''; inset: 0; position: absolute; }
+.portfolio-card > * { position: relative; }
+.portfolio-card span { color: #e1c27d; font-size: 11px; letter-spacing: .16em; }
+.portfolio-card h2 { font-family: Georgia, serif; font-size: 32px; line-height: 1.05; margin: 12px 0 0; }
+.portfolio-one { background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=85'); }
+.portfolio-two { background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85'); }
+.portfolio-three { background-image: url('https://images.unsplash.com/photo-1590644365607-1c5a8c0f8c32?auto=format&fit=crop&w=1000&q=85'); }
+@media (max-width: 800px) { .form-section { grid-template-columns: 1fr; gap: 40px; padding: 72px 0; } .portfolio-grid { grid-template-columns: 1fr; padding: 64px 0; } .portfolio-card { min-height: 300px; } }
