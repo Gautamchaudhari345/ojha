@@ -80,3 +80,24 @@ a { text-decoration: none; }
 .footer-bottom div { display: flex; gap: 20px; }
 .footer-bottom a { color: inherit; }
 @media (max-width: 700px) { .container { width: min(100% - 32px, 1180px); } .hero-section, .hero-section .container { min-height: 620px; } .hero-title { font-size: 46px; } .intro-section, .project-section, .process-section, .faq-section, .services-section, .why-section { padding-bottom: 80px; padding-top: 80px; } .process-grid { gap: 24px 0; grid-template-columns: repeat(2, 1fr); } .process-step:nth-child(5) { grid-column: span 2; } .project-image { min-height: 360px; } .footer-bottom { align-items: flex-start; flex-direction: column; gap: 14px; } }
+.inner-page { background: #f5f7fa; min-height: 100vh; }
+.inner-hero { background-position: center; background-size: cover; color: white; min-height: 620px; padding: 54px 0 100px; }
+.back-link { color: rgba(255,255,255,.55); display: inline-block; font-size: 10px; letter-spacing: .16em; margin-bottom: 170px; }
+.inner-hero h1 { font-size: clamp(46px, 7vw, 86px); font-weight: 500; letter-spacing: -.07em; line-height: .96; margin: 20px 0 24px; }
+.inner-hero h1 span:last-child { color: #c9a45c; font-family: Georgia, serif; font-weight: 400; }
+.inner-hero p { color: rgba(255,255,255,.68); font-size: 16px; line-height: 1.75; margin-bottom: 30px; max-width: 590px; }
+.inner-section { padding: 120px 0; }
+.points-list { border-top: 1px solid #cfd5db; }
+.points-list > div { align-items: center; border-bottom: 1px solid #cfd5db; display: flex; gap: 18px; padding: 22px 0; }
+.points-list span { color: #c9a45c; font-size: 11px; }
+.points-list svg { color: #c9a45c; }
+.points-list p { color: #384454; font-size: 15px; margin: 0; }
+.inner-dark { background: #101d35; padding: 120px 0; }
+.faq-list .faq-row { border-color: rgba(255,255,255,.15); color: white; }
+.inner-cta { align-items: center; display: flex; justify-content: space-between; gap: 32px; padding: 120px 0; }
+.inner-cta h2 { color: #101d35; font-size: clamp(42px, 6vw, 74px); font-weight: 500; letter-spacing: -.07em; line-height: .95; margin: 20px 0 0; }
+.inner-cta em { color: #c9a45c; font-family: Georgia, serif; font-weight: 400; }
+.not-found { padding: 160px 0; }
+.not-found h1 { font-size: 60px; letter-spacing: -.06em; }
+.not-found p { color: #6a7482; margin-bottom: 28px; }
+@media (max-width: 700px) { .inner-hero { min-height: 590px; padding-top: 32px; } .back-link { margin-bottom: 140px; } .inner-section, .inner-dark, .inner-cta { padding: 80px 0; } .inner-cta { align-items: flex-start; flex-direction: column; } }
