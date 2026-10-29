@@ -1,5 +1,5 @@
 import SitePage from '@/components/site-page'
 
 export default function ServicesPage() {
-  return <SitePage slug={['services']} />
+  return <SitePage slug={['services', 'overview']} />
 }
